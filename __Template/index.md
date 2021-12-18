@@ -1,0 +1,3 @@
+# Créer un bot discord 02/?? - Structure et client
+
+Bienvenue dans ce nouveau chapitre ...
