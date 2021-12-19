@@ -29,7 +29,7 @@ Nodejs est ce que l'on appelle un [runtime](https://fr.wikipedia.org/wiki/Enviro
 
 ## Création du bot
 
-Nous allons commencer par créer notre bot sur le site des développeurs discord. Pour cela ouvrez le lien vers [le portail des développeurs](https://discord.com/developers/applications) dirrectement dans le navigateur, si nécessaire connectez vous avec votre compte discord. Vous devriz arriver sur une page comme celle-ci :
+Nous allons commencer par créer notre bot sur le site des développeurs discord. Pour cela ouvrez le lien vers [le portail des développeurs](https://discord.com/developers/applications) directement dans le navigateur, si nécessaire connectez vous avec votre compte discord. Vous devriz arriver sur une page comme celle-ci :
 
 ![discord_dev_portal](https://cdn.discordapp.com/attachments/921734488533401642/921734810836287498/discord_dev_portal.png)
 
@@ -53,7 +53,7 @@ Et voila ! Notre bot vient d'être créé  avec toutes les options nécessaires.
 
 ## Invitation du bot
 
-Dans cette section je pars du principe que vous avez déjà créer votre serveur discord. Si vous ne savez pas comment faire je vous laisse consulter [ce lien](https://support.discord.com/hc/fr/articles/204849977-Comment-cr%C3%A9er-un-serveur-).
+Dans cette section je pars du principe que vous avez déjà créé votre serveur discord. Si vous ne savez pas comment faire je vous laisse consulter [ce lien](https://support.discord.com/hc/fr/articles/204849977-Comment-cr%C3%A9er-un-serveur-).
 
 Sur la page du panel de gstion de votre bot sur [discord.dev](https://discord.com/developers/applications) vous pouvez voir sur le côté un onglet "Oauth2", une fois dessus allez dans le sous menu "URL Generator". Vous devriez voir apparaître une page comme celle-ci :
 
