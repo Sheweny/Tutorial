@@ -74,6 +74,6 @@ Pour notre bot nous allons utiliser des modules pour nous simplifier la tache, e
 Dans ce chapitre nous avons vu :
 
 - Comment créer une structure propre pour notre bot
-- Comment créer notre fichier de config 
+- Comment créer notre fichier de config
 - Comment initialiser `npm`
-- Enfin comment installer les modules nécessaires 
+- Enfin comment installer les modules nécessaires
