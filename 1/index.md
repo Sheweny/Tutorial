@@ -8,12 +8,12 @@ Dans ce premier chapitre nous allons déja mettre en place notre environement de
 
 ## Avant de commencer
 
-_Ce tutoriel s'adresse a toutes les personnes qui ont déja quelques bases avec le javascript._
+_Ce tutoriel s'adresse à toutes les personnes qui ont déja quelques bases avec le javascript._
 
 Tout au long de ce tutoriel je vais vous montrer des exemples de code, vous pourrez les retrouver sur le [github](https://github.com/Sheweny/Tutorial) de ce tutoriel.
-Le github contient dans chaque dossiers le code source de chaque chapitre, alors si vous ne comprenez pas quelque chose n'hésitez pas a aller y faire un tour.
+Le github contient dans chaque dossiers le code source de chaque chapitre, alors si vous ne comprenez pas quelque chose n'hésitez pas à aller y faire un tour.
 
-En cas de question ou de problème n'hésitez pas a me contacter, pour cela vous pouvez [ouvrir une issue sur github](https://github.com/Sheweny/Tutorial/issues/new), ou bien envoyer un message dans le salon "sheweny-js" sur le serveur [Game Creator Area](https://discord.gg/zyRMZmJsk9).
+En cas de question ou de problème n'hésitez pas à me contacter, pour cela vous pouvez [ouvrir une issue sur github](https://github.com/Sheweny/Tutorial/issues/new), ou bien envoyer un message dans le salon "sheweny-js" sur le serveur [Game Creator Area](https://discord.gg/zyRMZmJsk9).
 
 ## Mise en place de l'environement
 
