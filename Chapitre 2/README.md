@@ -2,16 +2,16 @@
 
 Bienvenue dans ce nouveau chapitre sur la structure de notre projet et l'installation des modules.
 
-Si vous n'avez pas vu le chapitre précédent sur la création du bot vous devriez le lire.
+_Ce chapitre fait parti d'une série de tutoriels. Bien qu'il soit possible de la suivre sans avoir lu les chapitres précédents, il est conseillé de les lire avant de commencer ce chapitre._
 
 ## Structure du projet
 
-Nous allons commencer par créer un dossier qui contiendra l'ensemble du code de notre bot. Une fois le dossier crée nous pouvons ouvrir notre IDE a l'intérieur de ce dossier.
+Nous allons commencer par créer un dossier qui contiendra l'ensemble du code de notre bot. Une fois le dossier créé nous pouvons ouvrir notre IDE a l'intérieur de ce dossier.
 Si vous utilisez Visual Studio Code vous pouvez ouvrir le dossier avec le raccourci clavier `Ctrl K Ctrl O` ou bien en faisant Fichier => Ouvrir un dossier.
 
 ### Initialisation de npm
 
-Une fois dans notre projet nous allons commencer par initialiser npm. Npm signifie Node Package Manager. Cette util en ligne de commande va nous permettre de télécharger des modules et de les installer. Pour initialiser npm il suffit de faire `npm init` dans un terminal (Terminal => Nouveau terminal ou `Ctrl + Shift + ù` ).
+Une fois dans notre projet nous allons commencer par initialiser npm. Npm signifie Node Package Manager. Cette outil en ligne de commande va nous permettre de télécharger des modules et de les installer. Pour initialiser npm il suffit de faire `npm init` dans un terminal (Terminal => Nouveau terminal ou `Ctrl + Shift + ù` ).
 Ensuite on réponds aux différentes questions posées. Le résultat devrait etre la création d'un fichié `package.json` qui contient les informations nécessaires à l'installation de notre projet.
 
 Pour ma part le fichier ressemble a ceci:
@@ -29,6 +29,8 @@ Pour ma part le fichier ressemble a ceci:
   "license": "ISC"
 }
 ```
+
+Astuce : utiliser `npm init -y` pour ne pas avoir à répondre à toutes les questions.
 
 ### Création des dossiers
 
@@ -67,7 +69,30 @@ module.exports = {
 
 ## Installation des modules
 
-Pour notre bot nous allons utiliser des modules pour nous simplifier la tache, en effet la création d'un bot sans module est très compliquée, il faut gérer un websocket, des requetes http, le cache, le rate-limite etc. Heureusement il existe des librairies très bien faites qui nous simplifieront la tache. Nous allons donc installer discord.js et Sheweny. Discord.js permettra de faire toutes les intéractions avec l'api de discord. Et Sheweny vous simplifira l'utilisation de discord.js, Sheweny va s'occuper de charger vos différents fichier et de gérer les évènements important, les commandes, événements etc. Pour installer discord.js et Sheweny il suffit de faire `npm install discord.js sheweny` dans un terminal.
+Pour notre bot nous allons utiliser des modules pour nous simplifier la tâche, en effet la création d'un bot sans module est très compliquée, il faut gérer un websocket, des requetes http, le cache, le rate-limite etc. Heureusement il existe des librairies très bien faites qui nous simplifieront la tâche. Nous allons donc installer discord.js et Sheweny. Discord.js permettra de faire toutes les intéractions avec l'api de discord. Et Sheweny vous simplifira l'utilisation de discord.js, Sheweny va s'occuper de charger vos différents fichier et de gérer les évènements important, les commandes, événements etc. Pour installer discord.js et Sheweny il suffit de faire `npm install discord.js sheweny` dans un terminal.
+
+## Structure finale
+
+Vous pouvez retrouver le code complet du bot sur [github](https://github.com/Sheweny/Tutorial)
+
+_Structure_
+
+```txt
+bot
+   │  config.js
+   │  package-lock.json
+   │  package.json
+   │
+   ├───node_modules
+   └───src
+       │  index.js
+       │
+       ├───commands
+       ├───events
+       ├───interactions
+       └───client
+           └─── client.js
+```
 
 ## Conclusion
 
@@ -77,3 +102,9 @@ Dans ce chapitre nous avons vu :
 - Comment créer notre fichier de config
 - Comment initialiser `npm`
 - Enfin comment installer les modules nécessaires
+
+Dans le prochain chapitre nous allons voir comment créer notre client et mettre notre bot en ligne.
+
+Si vous avez des questions n'hésitez pas a me contacter sur le serveur de GCA ou via des issues sur le repo.
+
+Passez un bon moment en codant avec Sheweny !
