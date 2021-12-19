@@ -4,11 +4,11 @@ Bienvenue dans ce tutoriel sur le développement d'un bot discord !
 
 Nous allons voir tout au long de ce tutoriel comment créer un bot discord, Pour cela le tutoriel sera divisé en plusieurs chapitres qui sortiront régulièrement.
 
-Dans ce premier chapitre nous allons déja mettre en place notre environement de développement, nous allons installer les outils nécessaires pour le développement de notre bot ainci que le créer et l'inviter sur notre serveur.
+Dans ce premier chapitre nous allons déjà mettre en place notre environement de développement, nous allons installer les outils nécessaires pour le développement de notre bot ainci que le créer et l'inviter sur notre serveur.
 
 ## Avant de commencer
 
-_Ce tutoriel s'adresse à toutes les personnes qui ont déja quelques bases avec le javascript._
+_Ce tutoriel s'adresse à toutes les personnes qui ont déjà quelques bases avec le javascript._
 
 Tout au long de ce tutoriel je vais vous montrer des exemples de code, vous pourrez les retrouver sur le [github](https://github.com/Sheweny/Tutorial) de ce tutoriel.
 Le github contient dans chaque dossiers le code source de chaque chapitre, alors si vous ne comprenez pas quelque chose n'hésitez pas à aller y faire un tour.
@@ -53,7 +53,7 @@ Et voila ! Notre bot vient d'être crée avec toutes les options nécéssaires.
 
 ## Invitation du bot
 
-Dans cette section j'admets que vous avez déja créer votre serveur discord. Si vous ne savez pas comment faire je vous laisse conculter [ce lien](https://support.discord.com/hc/fr/articles/204849977-Comment-cr%C3%A9er-un-serveur-).
+Dans cette section j'admets que vous avez déjà créer votre serveur discord. Si vous ne savez pas comment faire je vous laisse conculter [ce lien](https://support.discord.com/hc/fr/articles/204849977-Comment-cr%C3%A9er-un-serveur-).
 
 Sur la page du panel de gstion de votre bot sur [discord.dev](https://discord.com/developers/applications) vous pouvez voir sur le côté un onglet "Oauth2", une fois dessus allez dans le sous menu "URL Generator". Vous devriez voir apparaitre une page comme celle-ci :
 
