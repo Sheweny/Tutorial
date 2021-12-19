@@ -1,6 +1,6 @@
 # Créer un bot discord 02/?? - Structure du projet et modules
 
-Bienvenue dans ce nouveau chapitre sur la structure de notre projet et le début du code.
+Bienvenue dans ce nouveau chapitre sur la structure de notre projet et l'installation des modules.
 
 Si vous n'avez pas vu le chapitre précédent sur la création du bot vous devriez le lire.
 
@@ -70,3 +70,10 @@ module.exports = {
 Pour notre bot nous allons utiliser des modules pour nous simplifier la tache, en effet la création d'un bot sans module est très compliquée, il faut gérer un websocket, des requetes http, le cache, le rate-limite etc. Heureusement il existe des librairies très bien faites qui nous simplifieront la tache. Nous allons donc installer discord.js et Sheweny. Discord.js permettra de faire toutes les intéractions avec l'api de discord. Et Sheweny vous simplifira l'utilisation de discord.js, Sheweny va s'occuper de charger vos différents fichier et de gérer les évènements important, les commandes, événements etc. Pour installer discord.js et Sheweny il suffit de faire `npm install discord.js sheweny` dans un terminal.
 
 ## Conclusion
+
+Dans ce chapitre nous avons vu :
+
+- Comment créer une structure propre pour notre bot
+- Comment créer notre fichier de config 
+- Comment initialiser `npm`
+- Enfin comment installer les modules nécessaires 
