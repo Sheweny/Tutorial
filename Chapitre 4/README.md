@@ -60,7 +60,7 @@ Il existe d'autres options qui seront détaillez plus tard mais vous pouvez les 
 On retrouve une fonction `execute()`, cette fonction contiendra l'ensemble du code de notre commande, ici nous avons simplement mis une réponse à l'utilisateur.
 Pour les slash-commands la fonction execute aura toujours un paramètre de type [CommandInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction)
 On voit donc sur la documentation de discord.js que nous avons accès a la fonction `reply()` ce qui nous permet de répondre à l'utilisateur.
-Notez que si nous ne répondons pas a l'utilisateur, nous verrons un message d'erreur apparaitre sur discord au bout de 3 secondes :
+Notez que si nous ne répondons pas a l'utilisateur, nous verrons un message d'erreur apparaître sur discord au bout de 3 secondes :
 
 ![interaction_error](./assets/images/interaction_error.png)
 
