@@ -12,6 +12,6 @@ Vous pouvez retrouver le code complet du bot sur [github](https://github.com/She
 
 ...
 
-Si vous avez des questions n'hésitez pas a me contacter sur le serveur de GCA ou via des issues sur le repo.
+Si vous avez des questions n'hésitez pas à me contacter sur le serveur de GCA ou via des issues sur le repo.
 
 Passez un bon moment en codant avec Sheweny !

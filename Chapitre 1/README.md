@@ -4,7 +4,7 @@ Bienvenue dans ce tutoriel sur le développement d'un bot discord !
 
 Nous allons voir tout au long de ce tutoriel comment créer un bot discord, Pour cela le tutoriel sera divisé en plusieurs chapitres qui sortiront régulièrement.
 
-Dans ce premier chapitre nous allons déjà mettre en place notre environnement de développement, nous allons installer les outils nécessaires pour développer notre bot ainci que le créer et l'inviter sur notre serveur.
+Dans ce premier chapitre nous allons déjà mettre en place notre environnement de développement, nous allons installer les outils nécessaires pour développer notre bot Ainsi que le créer et l'inviter sur notre serveur.
 
 ## Avant de commencer
 
@@ -65,7 +65,7 @@ Sur le tableau "Scopes" il faut sélectionner "bot" et "application.commands" co
 
 Notez que a ce moment vous pouvez également sélectionner les permissions qui seront demandées lors de l'invitation du bot. Même si ce n'est pas une bonne chose pour les besoins du tutoriel je vais demander la permission "Administrateur" comme ca nous n'aurons jamais de problème avec les permissions.
 
-Tout en bas de la page vous verrez un lien qui vient d'etre généré. Il vous suffira de le copier dans un navigateur pour inviter votre bot. Sur la page d'invitation vous pouvez choisir votre serveur (_notez qu'il vous faut la permission "Manage Guild" pour pouvoir inviter un bot dans un serveur_) puis accorder les permissions demandées. Vous serez invité à valider un captcha puis le bot sera sur votre serveur. Une fois cela fait le bot devrait apparaître dans la liste des membres du serveur avec le statut "offline". Comme sur l'image ci-dessous :
+Tout en bas de la page vous verrez un lien qui vient d'être généré. Il vous suffira de le copier dans un navigateur pour inviter votre bot. Sur la page d'invitation vous pouvez choisir votre serveur (_notez qu'il vous faut la permission "Manage Guild" pour pouvoir inviter un bot dans un serveur_) puis accorder les permissions demandées. Vous serez invité à valider un captcha puis le bot sera sur votre serveur. Une fois cela fait le bot devrait apparaître dans la liste des membres du serveur avec le statut "offline". Comme sur l'image ci-dessous :
 
 ![bot_invited](https://cdn.discordapp.com/attachments/921734488533401642/921734809250836500/bot_invited.png)
 

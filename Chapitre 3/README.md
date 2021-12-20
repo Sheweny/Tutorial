@@ -10,7 +10,7 @@ Le client représente notre bot, c'est le point de départ de tout robot sur dis
 
 ## Création du client
 
-Notre client va etre l'instance d'une classe nomée ShewenyClient. Comme pour tous ce qui vient d'une librairie il faut l'importer. Nous allons donc nous positionner dans le fichier client.js pour ctte première partie :
+Notre client va être l'instance d'une classe nomée ShewenyClient. Comme pour tous ce qui vient d'une librairie il faut l'importer. Nous allons donc nous positionner dans le fichier client.js pour ctte première partie :
 
 _client.js_
 
@@ -57,7 +57,7 @@ const client = new ShewenyClient({
 ### Les partials
 
 Les partials est une notion complexe a comprendre car cela repose sur le fonctionnement interne de discord.js mais je vais vous expliquer le principal :
-Quand le bot doit recevoir un événement comme l'ajout d'une réaction à un message il va construire un objet qui va contenir toutes les données nécessaires pour le bot. Cet objet peut reposer sur des données mises en cache par exemple un message. Cependant, si le message n'est pas dans le cache discord.js va etre dans l'incapacité de construire un objet complet et ne va donc rien faire. Pour résoudre ce problème il faut utiliser des partials. Les partials vont forcer discord.js à émettre l'événement meme si certaines données sont manquantes. De notre coté pour activer les partials nous allons faire un peu comme les intents : Nous allons faire un array qui contient toutes les partials :
+Quand le bot doit recevoir un événement comme l'ajout d'une réaction à un message il va construire un objet qui va contenir toutes les données nécessaires pour le bot. Cet objet peut reposer sur des données mises en cache par exemple un message. Cependant, si le message n'est pas dans le cache discord.js va être dans l'incapacité de construire un objet complet et ne va donc rien faire. Pour résoudre ce problème il faut utiliser des partials. Les partials vont forcer discord.js à émettre l'événement meme si certaines données sont manquantes. De notre coté pour activer les partials nous allons faire un peu comme les intents : Nous allons faire un array qui contient toutes les partials :
 
 ```js
 const client = new ShewenyClient({
@@ -68,7 +68,7 @@ const client = new ShewenyClient({
 
 ### Le statut du bot
 
-Ici le but de cette option va etre de donner un statut à notre bot et un message. Pour cela nous allons utiliser un objet de type `Presence` comme ci-dessous :
+Ici le but de cette option va être de donner un statut à notre bot et un message. Pour cela nous allons utiliser un objet de type `Presence` comme ci-dessous :
 
 ```js
 const client = new ShewenyClient({
@@ -220,6 +220,6 @@ Ce chapitre présente plusieurs notions complexes et nous aurons l'occasion de r
 
 Dans le prochain chapitre nous allons créer notre première commande et évoquer les principales options de commandes
 
-Si vous avez des questions n'hésitez pas a me contacter sur le serveur de GCA ou via des issues sur le repo.
+Si vous avez des questions n'hésitez pas à me contacter sur le serveur de GCA ou via des issues sur le repo.
 
 Passez un bon moment en codant avec Sheweny !
