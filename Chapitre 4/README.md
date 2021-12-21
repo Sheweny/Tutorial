@@ -1,7 +1,7 @@
 # Créer un bot discord 04/?? - Découverte des commandes message
 
-Bienvenue dans ce nouveau chapitre dans le quel nous allons découvrir les commandes de messages. Les commandes messages ont été les premières a apparaitre sur discord.
-Bien qu'au jourd'hui elles aient été remplacées majoriatirement par les "slash-commands" elles restent utilisées dans certains cas. Etant donné que discord recommande de ne pas utiliser les commandes message, nous n'en parlerons que brièvement dans ce chapitre.
+Bienvenue dans ce nouveau chapitre dans lequel nous allons découvrir les commandes de messages. Les commandes messages ont étées les premières a apparaître sur discord.
+Bien qu'aujourd'hui elles aient étées remplacées majoriatirement par les "slash-commands" elles restent utilisées dans certains cas. Etant donné que discord recommande de ne pas les utiliser, nous n'en parlerons que brièvement dans ce chapitre.
 
 _Ce chapitre fait parti d'une série de tutoriels. Bien qu'il soit possible de la suivre sans avoir lu les chapitres précédents, il est conseillé de les lire avant de commencer ce chapitre._
 
@@ -43,7 +43,7 @@ On oublis pas de sauvegarder notre fichier puis on peut le fermer.
 
 ### La structure de base
 
-On va créer une commande de base grâce a la structure `Command` que on va importer de `sheweny`.
+On va créer une commande de base grâce à la structure `Command` que on va importer de `sheweny`.
 
 ```js
 const { Command } = require("sheweny");
