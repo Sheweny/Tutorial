@@ -28,13 +28,13 @@ module.exports = class PingUserCommand extends Command {
 };
 ```
 
-Cette commande est semblable a la précédente, mais nous allons ajouter des arguments dans la commande.
+Cette commande est semblable à la précédente, mais nous allons y ajouter des arguments.
 
 ## Structure des arguments
 
 ### Définition d'un argument
 
-Pour ajouter un argument a une commande il faut utiliser la key `args` qui prend pour valeur un tableau d'objets d'arguments :
+Pour ajouter un argument à une commande il faut utiliser la key `args` qui prend pour valeur un tableau d'objets d'arguments :
 
 ```js
 args: [
@@ -46,14 +46,14 @@ args: [
 ];
 ```
 
-Ici le nom de l'argument doit etre une clé d'objet valide (sans espaces, commencant par une lettre, sans caractères spéciaux a part les underscore).
-Le type de l'argument doit etre un des arguments cités ci-dessous.
+Ici le nom de l'argument doit être une clé d'objet valide (sans espaces, commencant par une lettre, sans caractères spéciaux à part les underscore).
+Le type de l'argument doit être un des arguments cités ci-dessous.
 Enfin la valeur par défaut doit etre une valeur valide pour le type de l'argument.
 
 ### Récéption d'un argument
 
-Les arguments sont recus dans la méthode `execute` de la commande. C'est le 2eme et dernier argument de la méthode `execute`.
-Cet argument contient un objet des arguments, il doit etre utilisé de la facon suivanete :
+Les arguments sont reçus dans la méthode `execute()` de la commande. C'est le 2eme et dernier argument de la méthode `execute()`.
+Cet argument contient un objet des arguments, il doit être utilisé de la facon suivante :
 
 ```js
 execute(message, args) {
@@ -68,8 +68,8 @@ Nous allons maintenant voir les différents types d'arguments que nous pouvons u
 
 ### Type `STRING`
 
-Le type string permet de recevoir une chaine de caractères composée de 1 seul mot. Si vous voulez recevoir une chaine de caractères composée de plusieurs mots, vous devez utiliser le type `REST`.
-Sa valeur par défaut doit etre une chaine de caractères.
+Le type string permet de recevoir une chaîne de caractères composée d'un seul mot. Si vous voulez recevoir une chaîne de caractères composée de plusieurs mots, vous devez utiliser le type `REST`.
+Sa valeur par défaut doit être une chaîne de caractères.
 
 ```js
 {
@@ -81,8 +81,8 @@ Sa valeur par défaut doit etre une chaine de caractères.
 
 ### Type `NUMBER`
 
-Le type number permet de recevoir un nombre entier ou décimal (avec un point pour la virgule). Le nombre doit etre sans espace et etre un nombre javascript valide.
-Sa valeur par défaut doit etre un nombre.
+Le type number permet de recevoir un nombre entier ou décimal (avec un point pour la virgule). Le nombre doit être sans espace et être un nombre javascript valide.
+Sa valeur par défaut doit être un nombre.
 
 ```js
 {
@@ -94,8 +94,8 @@ Sa valeur par défaut doit etre un nombre.
 
 ### Type `BOOLEAN`
 
-Le type boolean permet de recevoir un booléen, les valeurs possibles sont true/false ou 1/0. Ce type peut etre utilisé pour savoir si il faut activer quelque chose par exemple.
-Sa valeur par défaut doit etre un booléen.
+Le type boolean permet de recevoir un booléen, les valeurs possibles sont true/false ou 1/0. Ce type peut être utilisé pour savoir si il faut activer quelque chose par exemple.
+Sa valeur par défaut doit être un booléen.
 
 ```js
 {
@@ -107,7 +107,7 @@ Sa valeur par défaut doit etre un booléen.
 
 ### Type `GUILD`
 
-Le type guild renvoie une classe `Guild`. La valeur possible doit etre un id de la guild (nécéssite discord en mode développeur pour copier l'id).
+Le type guild renvoie une classe `Guild`. La valeur possible doit être un id (nécéssite discord en mode développeur pour copier l'id).
 
 ```js
 {
@@ -118,7 +118,7 @@ Le type guild renvoie une classe `Guild`. La valeur possible doit etre un id de 
 
 ### Type `CHANNEL`
 
-Le type channel renvoie une classe `DMChannel`, `GuildChannel`, `CategoryChannel`, `TextChannel`, `ThreadChannel`, `StoreChannel`, `VoiceChannel` ou `StageChannel`. La valeur peut etre une mention, un id, un nom, le début d'un nom.
+Le type channel renvoie une classe `DMChannel`, `GuildChannel`, `CategoryChannel`, `TextChannel`, `ThreadChannel`, `StoreChannel`, `VoiceChannel` ou `StageChannel`. La valeur peut être une mention, un id, un nom, le début d'un nom.
 
 ```js
 {
@@ -129,7 +129,7 @@ Le type channel renvoie une classe `DMChannel`, `GuildChannel`, `CategoryChannel
 
 ### Type `MEMBER`
 
-Le type member renvoie une classe `GuildMember`. La valeur peut etre une mention, un id, un nom, le début d'un nom, un nickname, un username, un username + tag.
+Le type member renvoie une classe `GuildMember`. La valeur peut être une mention, un id, un nom, le début d'un nom, un nickname, un username, un username + tag.
 
 ```js
 {
@@ -140,7 +140,7 @@ Le type member renvoie une classe `GuildMember`. La valeur peut etre une mention
 
 ### Type `GUILD_EMOJI`
 
-Le type guild emoji renvoie une classe `GuildEmoji`. La valeur peut etre une mention, un id, un nom, le début d'un nom.
+Le type guild emoji renvoie une classe `GuildEmoji`. La valeur peut être une mention, un id, un nom, le début d'un nom.
 
 ```js
 {
@@ -151,7 +151,7 @@ Le type guild emoji renvoie une classe `GuildEmoji`. La valeur peut etre une men
 
 ### Type `ROLE`
 
-Le type role renvoie une classe `GuildRole`. La valeur peut etre une mention, un id, un nom, le début d'un nom.
+Le type role renvoie une classe `GuildRole`. La valeur peut être une mention, un id, un nom, le début d'un nom.
 
 ```js
 {
@@ -162,7 +162,7 @@ Le type role renvoie une classe `GuildRole`. La valeur peut etre une mention, un
 
 ### Type `USER`
 
-Le type user renvoie une classe `User`. La valeur peut etre une mention, un id, un nom, le début d'un nom.
+Le type user renvoie une classe `User`. La valeur peut être une mention, un id, un nom, le début d'un nom.
 
 ```js
 {
@@ -173,7 +173,7 @@ Le type user renvoie une classe `User`. La valeur peut etre une mention, un id, 
 
 ### Type `REST`
 
-Le type rest renvoie une chaîne de caractères. La chaîne comprendra tous les mots de la commande a l'exeption des arguments précédents.
+Le type rest renvoie une chaîne de caractères. La chaîne comprendra tous les mots de la commande à l'exeption des arguments précédents.
 
 ```js
 {
@@ -182,7 +182,7 @@ Le type rest renvoie une chaîne de caractères. La chaîne comprendra tous les 
 },
 ```
 
-Voilà, vous savez maintenant comment ajouter des arguments a une commande de type message.
+Voilà, vous savez maintenant comment ajouter des arguments à une commande de type message.
 
 ## Code source final
 
@@ -260,7 +260,7 @@ module.exports = class PingUserCommand extends Command {
 
 Dans ce chapitre nous avons appris :
 
-- Comment ajouter des arguments a une commande de type message.
+- Comment ajouter des arguments à une commande de type message.
 - Comment utiliser les différents types d'arguments.
 - Comment utiliser les différents types d'arguments avec des valeurs par défaut.
 - Comment exploiter les arguments avec la fontion `execute()`.
