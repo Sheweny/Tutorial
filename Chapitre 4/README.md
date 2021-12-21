@@ -7,7 +7,7 @@ _Ce chapitre fait parti d'une série de tutoriels. Bien qu'il soit possible de l
 
 ## Modification de notre manager
 
-Les slash-commands ont besoins d'un prefix pour fonctionner afin d'identifier votre bot, personne n'aimerai que des commandes se déclenchent pendant une conversation.
+Les message-commands ont besoins d'un prefix pour fonctionner afin d'identifier votre bot, personne n'aimerai que des commandes se déclenchent pendant une conversation.
 Pour cela nous allons retourner dans notre fichier `client.js`, dans les options nous avons normalement notre commande manager :
 
 ```js
@@ -44,6 +44,7 @@ On oublis pas de sauvegarder notre fichier puis on peut le fermer.
 ### La structure de base
 
 On va créer une commande de base grâce à la structure `Command` que on va importer de `sheweny`.
+Nous allons commencer par créer un nouveau fichier qui va contenir notre commande. Vous êtes libres d'appeler ce fichier comme vous le souhaitez du moment qu'il se situe dans le dossier `commands` . De plus, dans le dossier `commands` vous pouvez créer autant de sous-dossiers que vous le souhaitez.
 
 ```js
 const { Command } = require("sheweny");
@@ -95,7 +96,7 @@ Il existe d'autres options qui seront détaillez plus tard mais vous pouvez les 
 ### Fonction execute
 
 On retrouve une fonction `execute()`, cette fonction contiendra l'ensemble du code de notre commande, ici nous avons simplement mis une réponse à l'utilisateur.
-Pour les slash-commands la fonction execute aura toujours un paramètre de type [Message](https://discord.js.org/#/docs/main/stable/class/Message)
+Pour les message-commands la fonction execute aura toujours un paramètre de type [Message](https://discord.js.org/#/docs/main/stable/class/Message)
 On voit donc sur la documentation de discord.js que nous avons accès a la fonction `reply()` ce qui nous permet de répondre à l'utilisateur.
 
 Pour les fonctions, il existe d'autres fonctions que `execute()` mais nous aurons l'occasion d'en reparler plus tard.

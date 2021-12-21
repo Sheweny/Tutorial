@@ -48,7 +48,7 @@ args: [
 
 Ici le nom de l'argument doit être une clé d'objet valide (sans espaces, commencant par une lettre, sans caractères spéciaux à part les underscore).
 Le type de l'argument doit être un des arguments cités ci-dessous.
-Enfin la valeur par défaut doit etre une valeur valide pour le type de l'argument.
+Enfin la valeur par défaut doit être une valeur valide pour le type de l'argument.
 
 ### Récéption d'un argument
 
