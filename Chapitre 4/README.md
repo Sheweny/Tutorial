@@ -66,6 +66,10 @@ module.exports = class PingUserCommand extends Command {
 };
 ```
 
+Le résultat devrait être :
+
+![command](./assets/images/command.png)
+
 ### Importation et instanciation de la classe Command
 
 Tout d'abord on importe la classe `Command` de la librairie Sheweny. Cette classe contient tous ce qui est nécéssaire a la création de n'importe quelle commande.
@@ -101,6 +105,8 @@ Pour les fonctions, il existe d'autres fonctions que `execute()` mais nous auron
 Nous avons vu que la fonction prend un paramètre `message` quand la commande est de type `MESSAGE_COMMAND`. Cette classe est une classe de discord.js, elle contient toutes les informations sur le message. Il est possible d'accéder a beaucoup d'informations comme le serveur avec `message.guild`, le channel avec `message.channel`, le message contenu du message avec `message.content`, l'utilisateur avec `message.author` etc. Vous pouvez retrouver toutes les informations sur la documentation de discord.js : [Message](https://discord.js.org/#/docs/main/stable/class/Message)
 
 ## Le code source final
+
+Vous pouvez retrouver le code complet du bot sur [github](https://github.com/Sheweny/Tutorial)
 
 _client.js_
 
