@@ -1,5 +1,7 @@
 # Tutoriel Sheweny ✨
 
+Sheweny est un framework pour créer des bots sur discord avec discord.js.
+
 Bienvenue dans le repo du tutoriel sur le framework Sheweny. Vous retrouverez chaque chapitre dans un dossier avec le numéro du chapitre correspondant.
 
 - Le code source est disponible dans `Chapitre <x>/assets/source`
