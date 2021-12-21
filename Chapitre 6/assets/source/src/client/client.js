@@ -19,6 +19,7 @@ const client = new ShewenyClient({
       guildId: ["921728751434362901"],
       autoRegisterApplicationCommands: true,
       loadAll: true,
+      prefix: "!",
     },
     events: {
       directory: "./events",
