@@ -13,7 +13,7 @@ _Ce tutoriel s'adresse à toutes les personnes qui ont déjà quelques bases ave
 Tout au long de ce tutoriel, je vais vous montrer des exemples de code, vous pourrez les retrouver sur le [github](https://github.com/Sheweny/Tutorial) de ce tutoriel.
 Le github contient dans chaque dossier le code source de chaque chapitre, alors si vous ne comprenez pas quelque chose n'hésitez pas à aller y faire un tour.
 
-En cas de question ou de problème n'hésitez pas à me contacter, pour cela vous pouvez [ouvrir une issue sur github](https://github.com/Sheweny/Tutorial/issues/new), ou bien envoyer un message dans le salon "sheweny-js" sur le serveur [Game Creator Area](https://discord.gg/zyRMZmJsk9).
+En cas de question ou de problème n'hésitez pas à me contacter, pour cela vous pouvez [ouvrir une issue sur github](https://github.com/Sheweny/Tutorial/issues/new), ou bien envoyer un message sur le [serveur support](https://discord.gg/euCF8bp4cN) .
 
 ## Mise en place de l'environnement
 
