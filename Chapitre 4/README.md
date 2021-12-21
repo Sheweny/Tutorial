@@ -1,41 +1,74 @@
-# Créer un bot discord 04/?? - Création de notre première commande
+# Créer un bot discord 04/?? - Découverte des commandes message
 
-Bienvenue dans ce nouveau chapitre dans le quel nous allons créer notre première commande.
+Bienvenue dans ce nouveau chapitre dans le quel nous allons découvrir les commandes de messages. Les commandes messages ont été les premières a apparaitre sur discord.
+Bien qu'au jourd'hui elles aient été remplacées majoriatirement par les "slash-commands" elles restent utilisées dans certains cas. Etant donné que discord recommande de ne pas utiliser les commandes message, nous n'en parlerons que brièvement dans ce chapitre.
 
 _Ce chapitre fait parti d'une série de tutoriels. Bien qu'il soit possible de la suivre sans avoir lu les chapitres précédents, il est conseillé de les lire avant de commencer ce chapitre._
 
-## Préparation
+## Modification de notre manager
 
-Nous allons commencer par créer un nouveau fichier qui va contenir notre commande. Vous etes libres d'appeler ce fichier comme vous le souhaitez du moment qu'il se situe dans le dossier `commands` . De plus, dans le dossier `commands` vous pouvez créer autant de sous-dossiers que vous le souhaitez.
-Pour ma part je vais appeler ce fichier `ping.js`.
+Les slash-commands ont besoins d'un prefix pour fonctionner afin d'identifier votre bot, personne n'aimerai que des commandes se déclenchent pendant une conversation.
+Pour cela nous allons retourner dans notre fichier `client.js`, dans les options nous avons normalement notre commande manager :
 
-## Code minimale d'une commande
+```js
+commands: {
+      directory: "./commands",
+      guildId: ["921728751434362901"],
+      autoRegisterApplicationCommands: true,
+      loadAll: true,
+    },
+```
 
-Nous allons voir ici le code minimale requis pour que notre commande fonctionne :
+Nous allons ajouter une ligne `prefix` avec une chaine de caractères qui sera le prefixe de nos commandes.
+
+```js
+prefix: "!",
+```
+
+Le manager finale devrait ressembler a ceci :
+
+```js
+commands: {
+      directory: "./commands",
+      guildId: ["921728751434362901"],
+      autoRegisterApplicationCommands: true,
+      loadAll: true,
+      prefix: "!",
+    },
+```
+
+On oublis pas de sauvegarder notre fichier puis on peut le fermer.
+
+## Création de la commande
+
+### La structure de base
+
+On va créer une commande de base grâce a la structure `Command` que on va importer de `sheweny`.
 
 ```js
 const { Command } = require("sheweny");
 
-module.exports = class PingCommand extends Command {
+module.exports = class PingUserCommand extends Command {
   constructor(client) {
     super(client, {
-      name: "ping",
-      type: "SLASH_COMMAND",
-      description: "Ping the bot",
+      name: "msg-command",
+      type: "MESSAGE_COMMAND",
+      description: "Teste des commandes message",
       category: "Misc",
     });
   }
-  execute(interaction) {
-    interaction.reply({ content: "Pong !" });
+
+  execute(message) {
+    message.reply({
+      content: `Voici une commande message !`,
+    });
   }
 };
 ```
 
-On va décomposer le code suivant
-
 ### Importation et instanciation de la classe Command
 
-Tout d'abord on importe la classe Command de la librairie Sheweny. Cette classe contient tous ce qui est nécéssaire a la création de n'importe quelle commande.
+Tout d'abord on importe la classe `Command` de la librairie Sheweny. Cette classe contient tous ce qui est nécéssaire a la création de n'importe quelle commande.
 On utilise le mot clé `extends` pour étendre la classe et pouvoir définir le code de nos fonctions.
 
 ### Options de la commande
@@ -44,9 +77,9 @@ Nous allons donc maintenant parler de l'objet suivant :
 
 ```js
 {
-  name: "ping",
-  type: "SLASH_COMMAND",
-  description: "Ping the bot",
+  name: "msg-command",
+  type: "MESSAGE_COMMAND",
+  description: "Teste des commandes message",
   category: "Misc",
 }
 ```
@@ -58,56 +91,70 @@ Il existe d'autres options qui seront détaillez plus tard mais vous pouvez les 
 ### Fonction execute
 
 On retrouve une fonction `execute()`, cette fonction contiendra l'ensemble du code de notre commande, ici nous avons simplement mis une réponse à l'utilisateur.
-Pour les slash-commands la fonction execute aura toujours un paramètre de type [CommandInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction)
+Pour les slash-commands la fonction execute aura toujours un paramètre de type [Message](https://discord.js.org/#/docs/main/stable/class/Message)
 On voit donc sur la documentation de discord.js que nous avons accès a la fonction `reply()` ce qui nous permet de répondre à l'utilisateur.
-Notez que si nous ne répondons pas a l'utilisateur, nous verrons un message d'erreur apparaître sur discord au bout de 3 secondes :
-
-![interaction_error](./assets/images/interaction_error.png)
 
 Pour les fonctions, il existe d'autres fonctions que `execute()` mais nous aurons l'occasion d'en reparler plus tard.
 
-## Editer une réponse
+## La classe Message
 
-Pour améliorer notre commande ping nous allons ajouter le temps de réponse du bot (qui sera en fait le temps qu'il met a envoyer un message).
+Nous avons vu que la fonction prend un paramètre `message` quand la commande est de type `MESSAGE_COMMAND`. Cette classe est une classe de discord.js, elle contient toutes les informations sur le message. Il est possible d'accéder a beaucoup d'informations comme le serveur avec `message.guild`, le channel avec `message.channel`, le message contenu du message avec `message.content`, l'utilisateur avec `message.author` etc. Vous pouvez retrouver toutes les informations sur la documentation de discord.js : [Message](https://discord.js.org/#/docs/main/stable/class/Message)
 
-Pour cela nous allons créer une variable au début avec le timestamp de départ puis nous allons créer une autre variable avec le timestamp au moment ou le message a été envoyé.
-Ensuite il suffira de faire une différence entre les deux variables pour savoir le temps de réponse du bot.
+## Le code source final
+
+_client.js_
 
 ```js
-const start = Date.now();
-interaction.reply({ content: "Pong !" }).then(() => {
-  const end = Date.now();
-  const time = end - start;
-  interaction.editReply({ content: `Pong : ${time}ms` });
+const { ShewenyClient } = require("sheweny");
+const { Intents } = require("discord.js");
+
+const client = new ShewenyClient({
+  intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
+  partials: ["CHANNEL", "MESSAGE", "REACTION", "USER", "GUILD_MEMBER"],
+  presence: {
+    status: "online",
+    activities: [
+      {
+        name: "Tutorial Bot",
+        type: "WATCHING",
+      },
+    ],
+  },
+  managers: {
+    commands: {
+      directory: "./commands",
+      guildId: ["921728751434362901"],
+      autoRegisterApplicationCommands: true,
+      loadAll: true,
+      prefix: "!",
+    },
+    events: {
+      directory: "./events",
+      loadAll: true,
+    },
+  },
 });
+
+module.exports = client;
 ```
 
-Ici la fonction `Date.now()` nous permet de récupérer le timestamp actuel. Un timestamp correspond au nomre de millisecondes depuis le 1er janvier 1970.
-
-## Code source final
-
-Vous pouvez retrouver le code complet du bot sur [github](https://github.com/Sheweny/Tutorial)
-
-_ping.js_
+_msg-command.js_
 
 ```js
 const { Command } = require("sheweny");
 
-module.exports = class PingCommand extends Command {
+module.exports = class PingUserCommand extends Command {
   constructor(client) {
     super(client, {
-      name: "ping",
-      type: "SLASH_COMMAND",
-      description: "Ping the bot",
+      name: "msg-command",
+      description: "Teste des commandes message",
       category: "Misc",
     });
   }
-  execute(interaction) {
-    const start = Date.now();
-    interaction.reply({ content: "Pong !" }).then(() => {
-      const end = Date.now();
-      const time = end - start;
-      interaction.editReply({ content: `Pong : ${time}ms` });
+
+  execute(message) {
+    message.reply({
+      content: `Voici une commande message !`,
     });
   }
 };
@@ -115,12 +162,13 @@ module.exports = class PingCommand extends Command {
 
 ## Conclusion
 
-Dans ce chapitre sur notre première commande vous avez apris :
+Dans ce chapitre sur le création de notre première commande nous avons vu :
 
-- A créer une commande
-- A définir les options de base de la commande
-- A définir la fonction execute
-- A répondre et modifier la réponse de la commande
+- Comment créer une commande
+- Comment importer et instancier une commande
+- Comment définir les options de la commande
+- Comment définir la fonction execute
+- Comment utiliser la classe Message
 
 Si vous avez des questions n'hésitez pas à me contacter sur le serveur de GCA ou via des issues sur le repo.
 
