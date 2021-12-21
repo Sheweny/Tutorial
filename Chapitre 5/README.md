@@ -100,25 +100,25 @@ Sa valeur par défaut doit etre un booléen.
 ```js
 {
   name: "arg3",
-  type: "NUMBER",
+  type: "BOOLEAN",
   default: 1,
 },
 ```
 
 ### Type `GUILD`
 
-Le type guild renvoie une classe Guild. La valeur possible doit etre un id de la guild (nécéssite discord en mode développeur pour copier l'id).
+Le type guild renvoie une classe `Guild`. La valeur possible doit etre un id de la guild (nécéssite discord en mode développeur pour copier l'id).
 
 ```js
 {
   name: "arg4",
-  type: "NUMBER",
+  type: "GUILD",
 },
 ```
 
 ### Type `CHANNEL`
 
-Le type channel renvoie une classe DMChannel, GuildChannel, CategoryChannel, TextChannel, ThreadChannel, StoreChannel, VoiceChannel ou StageChannel. La valeur peut etre une mention, un id, un nom, le début d'un nom.
+Le type channel renvoie une classe `DMChannel`, `GuildChannel`, `CategoryChannel`, `TextChannel`, `ThreadChannel`, `StoreChannel`, `VoiceChannel` ou `StageChannel`. La valeur peut etre une mention, un id, un nom, le début d'un nom.
 
 ```js
 {
@@ -129,7 +129,7 @@ Le type channel renvoie une classe DMChannel, GuildChannel, CategoryChannel, Tex
 
 ### Type `MEMBER`
 
-Le type member renvoie une classe GuildMember. La valeur peut etre une mention, un id, un nom, le début d'un nom, un nickname, un username, un username + tag.
+Le type member renvoie une classe `GuildMember`. La valeur peut etre une mention, un id, un nom, le début d'un nom, un nickname, un username, un username + tag.
 
 ```js
 {
@@ -140,7 +140,7 @@ Le type member renvoie une classe GuildMember. La valeur peut etre une mention, 
 
 ### Type `GUILD_EMOJI`
 
-Le type guild emoji renvoie une classe GuildEmoji. La valeur peut etre une mention, un id, un nom, le début d'un nom.
+Le type guild emoji renvoie une classe `GuildEmoji`. La valeur peut etre une mention, un id, un nom, le début d'un nom.
 
 ```js
 {
@@ -151,7 +151,7 @@ Le type guild emoji renvoie une classe GuildEmoji. La valeur peut etre une menti
 
 ### Type `ROLE`
 
-Le type role renvoie une classe GuildRole. La valeur peut etre une mention, un id, un nom, le début d'un nom.
+Le type role renvoie une classe `GuildRole`. La valeur peut etre une mention, un id, un nom, le début d'un nom.
 
 ```js
 {
@@ -265,7 +265,7 @@ Dans ce chapitre nous avons appris :
 - Comment utiliser les différents types d'arguments avec des valeurs par défaut.
 - Comment exploiter les arguments avec la fontion `execute()`.
 
-Après ces deux chapitres sur les commandes message, nous allons laisser un peu de coter ce type de commandes pour nous concentrer sur les intéractions.
+Après ces deux chapitres sur les commandes message, nous allons laisser un peu de côter ce type de commandes pour nous concentrer sur les intéractions.
 
 Si vous avez des questions n'hésitez pas à me contacter sur le serveur de GCA ou via des issues sur le repo.
 
