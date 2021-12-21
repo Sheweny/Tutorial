@@ -267,6 +267,6 @@ Dans ce chapitre nous avons appris :
 
 Après ces deux chapitres sur les commandes message, nous allons laisser un peu de côter ce type de commandes pour nous concentrer sur les intéractions.
 
-Si vous avez des questions n'hésitez pas à me contacter sur le serveur de GCA ou via des issues sur le repo.
+Si vous avez des questions n'hésitez pas à me contacter sur le [serveur support](https://discord.gg/euCF8bp4cN) ou via des issues sur le repo.
 
 Passez un bon moment en codant avec Sheweny !

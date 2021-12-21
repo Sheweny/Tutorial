@@ -220,6 +220,6 @@ Ce chapitre présente plusieurs notions complexes et nous aurons l'occasion de r
 
 Dans le prochain chapitre nous allons créer notre première commande et évoquer les principales options de commandes
 
-Si vous avez des questions n'hésitez pas à me contacter sur le serveur de GCA ou via des issues sur le repo.
+Si vous avez des questions n'hésitez pas à me contacter sur le [serveur support](https://discord.gg/euCF8bp4cN) ou via des issues sur le repo.
 
 Passez un bon moment en codant avec Sheweny !

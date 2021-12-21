@@ -122,6 +122,6 @@ Dans ce chapitre sur notre première commande vous avez apris :
 - A définir la fonction execute
 - A répondre et modifier la réponse de la commande
 
-Si vous avez des questions n'hésitez pas à me contacter sur le serveur de GCA ou via des issues sur le repo.
+Si vous avez des questions n'hésitez pas à me contacter sur le [serveur support](https://discord.gg/euCF8bp4cN) ou via des issues sur le repo.
 
 Passez un bon moment en codant avec Sheweny !
