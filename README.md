@@ -6,6 +6,6 @@ Bienvenue dans le repo du tutoriel sur le framework Sheweny. Vous retrouverez ch
 
 - Si vous prenez le code d'un chapitre entier n'oubliez pas de faire `npm i` pour installer les modules si vous n'avez pas le dossier `node_modules`
 
-En cas de difficuleté n'hésitez pas a ouvrir une issue ou a rejoindre le serveur support de Sheweny.
+En cas de difficuleté n'hésitez pas a ouvrir une issue ou a rejoindre le [serveur support de Sheweny](https://discord.gg/euCF8bp4cN).
 
 Passez un bon moment en codant avec Sheweny et a une prochaine 😉!
