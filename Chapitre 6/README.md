@@ -1,4 +1,4 @@
-# Créer un bot discord 05/?? - Création de notre première commande d'intéraction
+# Créer un bot discord 06/?? - Création de notre première commande d'intéraction
 
 Bienvenue dans ce nouveau chapitre dans lequel nous allons créer notre première slash-command.
 
