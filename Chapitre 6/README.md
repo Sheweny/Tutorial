@@ -61,7 +61,7 @@ Pour les slash-commands la fonction execute aura toujours un paramètre de type 
 On voit donc sur la documentation de discord.js que nous avons accès à la fonction `reply()` ce qui nous permet de répondre à l'utilisateur.
 Notez que si nous ne répondons pas à l'utilisateur, nous verrons un message d'erreur apparaître sur discord au bout de 3 secondes :
 
-![interaction_error](./assets/images/interaction_error.png)
+![interaction_error](https://cdn.discordapp.com/attachments/923148649884704828/923148681287467088/interaction_error.png)
 
 Il existe d'autres fonctions que `execute()` mais nous aurons l'occasion d'en reparler plus tard.
 
