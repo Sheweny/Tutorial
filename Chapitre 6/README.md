@@ -30,7 +30,7 @@ module.exports = class PingCommand extends Command {
 };
 ```
 
-On va décomposer le code suivant
+On va décomposer le code suivant.
 
 ### Importation et instanciation de la classe Command
 
