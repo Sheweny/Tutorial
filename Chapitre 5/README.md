@@ -1,6 +1,6 @@
 # Créer un bot discord 05/?? - Les options dans les commandes message
 
-Bienvenue dans ce nouveau chapitre dans le quel nous allons utiliser des arguments dans nos commandes message pour permettre aux utilisateurs de fournir des informations.
+Bienvenue dans ce nouveau chapitre dans lequel nous allons utiliser des arguments dans nos commandes message pour permettre aux utilisateurs de fournir des informations.
 
 _Ce chapitre fait parti d'une série de tutoriels. Bien qu'il soit possible de la suivre sans avoir lu les chapitres précédents, il est conseillé de les lire avant de commencer ce chapitre._
 
@@ -52,8 +52,8 @@ Enfin la valeur par défaut doit être une valeur valide pour le type de l'argum
 
 ### Récéption d'un argument
 
-Les arguments sont reçus dans la méthode `execute()` de la commande. C'est le 2eme et dernier argument de la méthode `execute()`.
-Cet argument contient un objet des arguments, il doit être utilisé de la facon suivante :
+Les arguments sont reçus dans la méthode `execute()` de la commande. C'est le 2ème et dernier argument de la méthode `execute()`.
+Cet argument contient un objet d'arguments, il doit être utilisé de la façon suivante :
 
 ```js
 execute(message, args) {
@@ -94,7 +94,7 @@ Sa valeur par défaut doit être un nombre.
 
 ### Type `BOOLEAN`
 
-Le type boolean permet de recevoir un booléen, les valeurs possibles sont true/false ou 1/0. Ce type peut être utilisé pour savoir si il faut activer quelque chose par exemple.
+Le type boolean permet de recevoir un booléen, les valeurs possibles sont true/false ou 1/0. Ce type peut être utilisé pour savoir s'il faut activer quelque chose par exemple.
 Sa valeur par défaut doit être un booléen.
 
 ```js
@@ -107,7 +107,7 @@ Sa valeur par défaut doit être un booléen.
 
 ### Type `GUILD`
 
-Le type guild renvoie une classe `Guild`. La valeur possible doit être un id (nécéssite discord en mode développeur pour copier l'id).
+Le type guild renvoie une classe `Guild`. La valeur possible doit être un id (nécessite discord en mode développeur pour copier l'id : pour cela, allez dans les paramètres de Discord, puis dans *paramètres de l'appli*, vous trouverez : *avancés*)
 
 ```js
 {
@@ -265,7 +265,7 @@ Dans ce chapitre nous avons appris :
 - Comment utiliser les différents types d'arguments avec des valeurs par défaut.
 - Comment exploiter les arguments avec la fontion `execute()`.
 
-Après ces deux chapitres sur les commandes message, nous allons laisser un peu de côter ce type de commandes pour nous concentrer sur les intéractions.
+Après ces deux chapitres sur les commandes message, nous allons laisser un peu de côté ce type de commandes pour nous concentrer sur les intéractions.
 
 Si vous avez des questions n'hésitez pas à me contacter sur le [serveur support](https://discord.gg/euCF8bp4cN) ou via des issues sur le repo.
 
