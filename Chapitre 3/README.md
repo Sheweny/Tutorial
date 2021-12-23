@@ -56,8 +56,8 @@ const client = new ShewenyClient({
 
 ### Les partials
 
-Les partials sont une notion complexe a comprendre car cela repose sur le fonctionnement interne de discord.js mais je vais vous expliquer le principal :
-Quand le bot doit recevoir un événement comme l'ajout d'une réaction à un message il va construire un objet qui va contenir toutes les données nécessaires pour le bot. Cet objet peut reposer sur des données mises en cache par exemple un message. Cependant, si le message n'est pas dans le cache discord.js va être dans l'incapacité de construire un objet complet et ne va donc rien faire. Pour résoudre ce problème il faut utiliser des partials. Les partials vont forcer discord.js à émettre l'événement même si certaines données sont manquantes. De notre coté pour activer les partials nous allons faire un peu comme les intents : Nous allons faire un array qui contient toutes les partials :
+Les partials sont une notion complexe a comprendre car cela repose sur le fonctionnement interne de discord.js, mais je vais vous expliquer le principal :
+Quand le bot doit recevoir un événement comme l'ajout d'une réaction à un message, il va construire un objet qui va contenir toutes les données nécessaires pour le bot. Cet objet peut reposer sur des données mises en cache par exemple un message. Cependant, si le message n'est pas dans le cache discord.js va être dans l'incapacité de construire un objet complet et ne va donc rien faire. Pour résoudre ce problème il faut utiliser des partials. Les partials vont forcer discord.js à émettre l'événement même si certaines données sont manquantes. De notre coté pour activer les partials nous allons faire un peu comme les intents : Nous allons faire un array qui contient toutes les partials :
 
 ```js
 const client = new ShewenyClient({
@@ -208,10 +208,10 @@ client.login(config.token); // Connexion à discord
 
 ## Conclusion
 
-Félicitations :) Votre bot est désormat en ligne. Dans ce chapitre nous avons appris
+Félicitations :) Votre bot est désormais en ligne. Dans ce chapitre nous avons appris
 
-- A instancier un client Sheweny
-- A quoi servent les intents
+- À instancier un client Sheweny
+- À quoi servent les intents
 - Comment mettre en place des partials
 - Comment configurer le client
 - Comment mettre en ligne le bot
