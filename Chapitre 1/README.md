@@ -78,3 +78,7 @@ Dans ce chapitre nous avons vu :
 - Comment inviter un bot sur discord
 
 Dans le prochain chapitre nous allons voir comment mettre en place la structure de notre bot et le fichier de configuration.
+
+Si vous avez des questions n'hésitez pas à me contacter sur le [serveur support](https://discord.gg/euCF8bp4cN) ou via des issues sur le repo.
+
+Passez un bon moment en codant avec Sheweny !
