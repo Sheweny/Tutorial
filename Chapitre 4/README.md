@@ -1,13 +1,13 @@
 # Créer un bot discord 04/?? - Découverte des commandes message
 
-Bienvenue dans ce nouveau chapitre dans lequel nous allons découvrir les commandes de messages. Les commandes messages ont étées les premières a apparaître sur discord.
-Bien qu'aujourd'hui elles aient étées remplacées majoriatirement par les "slash-commands" elles restent utilisées dans certains cas. Etant donné que discord recommande de ne pas les utiliser, nous n'en parlerons que brièvement dans ce chapitre.
+Bienvenue dans ce nouveau chapitre dans lequel nous allons découvrir les commandes de messages. Les commandes messages ont été les premières à apparaître sur discord.
+Bien qu'aujourd'hui elles aient été remplacées majoritairement par les "slash-commands" elles restent utilisées dans certains cas. Étant donné que discord recommande de ne pas les utiliser, nous n'en parlerons que brièvement dans ce chapitre.
 
 _Ce chapitre fait parti d'une série de tutoriels. Bien qu'il soit possible de la suivre sans avoir lu les chapitres précédents, il est conseillé de les lire avant de commencer ce chapitre._
 
 ## Modification de notre manager
 
-Les message-commands ont besoins d'un prefix pour fonctionner afin d'identifier votre bot, personne n'aimerai que des commandes se déclenchent pendant une conversation.
+Les message-commands ont besoins d'un préfixe pour fonctionner afin d'identifier votre bot, personne n'aimerai que des commandes se déclenchent pendant une conversation.
 Pour cela nous allons retourner dans notre fichier `client.js`, dans les options nous avons normalement notre commande manager :
 
 ```js
@@ -19,13 +19,13 @@ commands: {
     },
 ```
 
-Nous allons ajouter une ligne `prefix` avec une chaine de caractères qui sera le prefixe de nos commandes.
+Nous allons ajouter une ligne `prefix` avec une chaine de caractères qui sera le préfixe de nos commandes.
 
 ```js
 prefix: "!",
 ```
 
-Le manager finale devrait ressembler a ceci :
+Le manager finale devrait ressembler à ceci :
 
 ```js
 commands: {
@@ -43,7 +43,7 @@ On oublis pas de sauvegarder notre fichier puis on peut le fermer.
 
 ### La structure de base
 
-On va créer une commande de base grâce à la structure `Command` que on va importer de `sheweny`.
+On va créer une commande de base grâce à la structure `Command` que l'on va importer de `sheweny`.
 Nous allons commencer par créer un nouveau fichier qui va contenir notre commande. Vous êtes libres d'appeler ce fichier comme vous le souhaitez du moment qu'il se situe dans le dossier `commands` . De plus, dans le dossier `commands` vous pouvez créer autant de sous-dossiers que vous le souhaitez.
 
 ```js
@@ -89,21 +89,28 @@ Nous allons donc maintenant parler de l'objet suivant :
 }
 ```
 
-Cet objet contient toutes les options de la commande, en premier le nom de la commande, cette key est obligatoire. Ensuite il y a le type, les valeurs possibles sont "SLASH_COMMAND", "MESSAGE_COMMAND", "CONTEXT_MENU_USER" et "CONTEXT_MENU_MESSAGE". Le type nous permet donc de créer différents types de commandes. Le type "SLASH_COMMAND" est une commande qui est appelée avec un slash. Le type "MESSAGE_COMMAND" est une commande qui est appelée avec un message. Le type "CONTEXT_MENU_USER" est une commande qui est appelée avec un menu contextuel d'un utilisateur. Le type "CONTEXT_MENU_MESSAGE" est une commande qui est appelée avec un menu contextuel d'un message. Nous auront la possibilité de reparler des types et de détailler l'utilisation de chacun d'eux.
+Cet objet contient toutes les options de la commande, en premier le nom de la commande, cette key est obligatoire. Ensuite il y a le type, les valeurs possibles sont :
+
+- Le type "SLASH_COMMAND" : Il s'agit d'une commande qui est appelée par un slash ( / ).
+- Le "MESSAGE_COMMAND" : Comme son nom l'indique, elle est appelée par un message.
+- Le type "CONTEXT_MENU_USER" : Ici il s'agit d'une commande qui est appelée avec un menu contextuel d'un utilisateur (le menu qui s'affiche lorsque l'on fait un clic droit sur un utilisateur).
+- Le type "CONTEXT_MENU_MESSAGE" : Il s'agit en fait du même principe que le précédent type, mais cette fois pour un message.
+
+Nous auront la possibilité de reparler des types et de détailler l'utilisation de chacun d'eux.
 Ensuite on a la description de la commande, cette key est obligatoire. Enfin on a la catégorie, cette key est optionnelle.
-Il existe d'autres options qui seront détaillez plus tard mais vous pouvez les retrouver dans la documentation de Sheweny : [CommandOptions](https://sheweny.js.org/doc/typedef/CommandOptions.html)
+Il existe d'autres options qui seront détaillées plus tard mais vous pouvez les retrouver dans la documentation de Sheweny : [CommandOptions](https://sheweny.js.org/doc/typedef/CommandOptions.html)
 
 ### Fonction execute
 
 On retrouve une fonction `execute()`, cette fonction contiendra l'ensemble du code de notre commande, ici nous avons simplement mis une réponse à l'utilisateur.
-Pour les message-commands la fonction execute aura toujours un paramètre de type [Message](https://discord.js.org/#/docs/main/stable/class/Message)
+Pour les message-commands la fonction execute aura toujours un paramètre de type [Message](https://discord.js.org/#/docs/main/stable/class/Message).
 On voit donc sur la documentation de discord.js que nous avons accès a la fonction `reply()` ce qui nous permet de répondre à l'utilisateur.
 
-Pour les fonctions, il existe d'autres fonctions que `execute()` mais nous aurons l'occasion d'en reparler plus tard.
+Il existe d'autres fonctions que `execute()` mais nous aurons l'occasion d'en reparler plus tard.
 
 ## La classe Message
 
-Nous avons vu que la fonction prend un paramètre `message` quand la commande est de type `MESSAGE_COMMAND`. Cette classe est une classe de discord.js, elle contient toutes les informations sur le message. Il est possible d'accéder a beaucoup d'informations comme le serveur avec `message.guild`, le channel avec `message.channel`, le message contenu du message avec `message.content`, l'utilisateur avec `message.author` etc. Vous pouvez retrouver toutes les informations sur la documentation de discord.js : [Message](https://discord.js.org/#/docs/main/stable/class/Message)
+Nous avons vu que la fonction prend un paramètre `message` quand la commande est de type `MESSAGE_COMMAND`. Il s'agit d'une classe de discord.js, elle contient toutes les informations sur le message. Il est possible d'accéder a beaucoup d'informations comme le serveur avec `message.guild`, le channel avec `message.channel`, le message contenu du message avec `message.content`, l'utilisateur avec `message.author` etc. Vous pouvez retrouver toutes les informations sur la documentation de discord.js : [Message](https://discord.js.org/#/docs/main/stable/class/Message)
 
 ## Le code source final
 
