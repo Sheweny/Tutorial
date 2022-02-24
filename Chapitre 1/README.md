@@ -47,9 +47,9 @@ Cliquez sur "Oui" pour confirmer la création de votre bot (avant nous étions s
 
 ![bot_created](https://cdn.discordapp.com/attachments/921734488533401642/921734810135842836/bot_created.png)
 
-En descendant un peu, vous pouvez apercevoir le titre "Intentions de passerelle privilégiée" ("Privileged Gateway Intents" en anglais) avec 3 sous-titres en dessous ("PRESENCE INTENT", "SERVER MEMBERS INTENT", "MESSAGE CONTENT INTENT") en dessous vous trouverez des boutons a cocher, il faut tous les activer. Je ne vais pas expliquer ici ce que sont les "gateway intents" car nous aurons l'occasion d'en parler dans les prochains chapitres. À côté de l'avatar de votre bot vous pouvez voir le token avec un bouton "Copier". Gardez bien ça en tete nous en aurons besoins dans le prochain chapitre.
+En descendant un peu, vous pouvez apercevoir le titre "Intentions de passerelle privilégiée" ("Privileged Gateway Intents" en anglais) avec 3 sous-titres en dessous ("PRESENCE INTENT", "SERVER MEMBERS INTENT", "MESSAGE CONTENT INTENT") en dessous vous trouverez des boutons a cocher, il faut tous les activer. Je ne vais pas expliquer ici ce que sont les "gateway intents" car nous aurons l'occasion d'en parler dans les prochains chapitres. À côté de l'avatar de votre bot vous pouvez voir le token avec un bouton "Copier". Gardez bien ça en tête nous en aurons besoins dans le prochain chapitre.
 
-Et voila ! Notre bot vient d'être créé avec toutes les options nécessaires.
+Et voilà ! Notre bot vient d'être créé avec toutes les options nécessaires.
 
 ## Invitation du bot
 
