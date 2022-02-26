@@ -12,6 +12,6 @@ Vous pouvez retrouver le code complet du bot sur [github](https://github.com/She
 
 ...
 
-Si vous avez des questions n'hésitez pas à me contacter sur le [serveur support](https://discord.gg/euCF8bp4cN) ou via des issues sur le repo.
+Si vous avez des questions n'hésitez pas à me contacter sur le [serveur support](https://discord.gg/euCF8bp4cN).
 
 Passez un bon moment en codant avec Sheweny !

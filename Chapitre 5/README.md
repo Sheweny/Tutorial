@@ -107,7 +107,7 @@ Sa valeur par défaut doit être un booléen.
 
 ### Type `GUILD`
 
-Le type guild renvoie une classe `Guild`. La valeur possible doit être un id (nécessite discord en mode développeur pour copier l'id : pour cela, allez dans les paramètres de Discord, puis dans *paramètres de l'appli*, vous trouverez : *avancés*)
+Le type guild renvoie une classe `Guild`. La valeur possible doit être un id (nécessite discord en mode développeur pour copier l'id : pour cela, allez dans les paramètres de Discord, puis dans _paramètres de l'appli_, vous trouverez : _avancés_)
 
 ```js
 {
@@ -267,6 +267,6 @@ Dans ce chapitre nous avons appris :
 
 Après ces deux chapitres sur les commandes message, nous allons laisser un peu de côté ce type de commandes pour nous concentrer sur les intéractions.
 
-Si vous avez des questions n'hésitez pas à me contacter sur le [serveur support](https://discord.gg/euCF8bp4cN) ou via des issues sur le repo.
+Si vous avez des questions n'hésitez pas à me contacter sur le [serveur support](https://discord.gg/euCF8bp4cN).
 
 Passez un bon moment en codant avec Sheweny !

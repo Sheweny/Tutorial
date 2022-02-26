@@ -184,6 +184,6 @@ Dans ce chapitre sur le création de notre première commande nous avons vu :
 - Comment définir la fonction execute
 - Comment utiliser la classe Message
 
-Si vous avez des questions n'hésitez pas à me contacter sur le [serveur support](https://discord.gg/euCF8bp4cN) ou via des issues sur le repo.
+Si vous avez des questions n'hésitez pas à me contacter sur le [serveur support](https://discord.gg/euCF8bp4cN).
 
 Passez un bon moment en codant avec Sheweny !
