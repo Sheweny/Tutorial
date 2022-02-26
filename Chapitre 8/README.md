@@ -197,14 +197,12 @@ Si vous avez réussi, félicitations ! :) Sinon prenez le temps de regarder la p
 
 ## Conclusion
 
-Dans ce chapitre nous avons appris a nous servir des autocomplete avec Sheweny.
+Dans ce chapitre nous avons appris i nous servir des autocomplete avec Sheweny.
 
 Après ce chapitre vous êtes maintenant capables :
 
-- De demander des informations complexes a un utilisateur
+- De demander des informations complexes à un utilisateur
 - De renvoyer des suggestions de façon dynamique
 - De mettre en place une commande complète
 
-Si vous avez des questions n'hésitez pas à me contacter sur le [serveur support](https://discord.gg/euCF8bp4cN).
-
-Passez un bon moment en codant avec Sheweny !
+Si vous avez des questions n'hésitez pas à me contacter sur le [serveur support](https://discord.gg/euCF8bp4cN) ou sur le serveur de G-CA.

@@ -307,6 +307,4 @@ Après ce chapitre vous êtes maintenant capables :
 - De récupérer les valeurs de ces options
 - D'organiser les commandes en sous-commandes et groupes de sous-commandes
 
-Si vous avez des questions n'hésitez pas à me contacter sur le [serveur support](https://discord.gg/euCF8bp4cN).
-
-Passez un bon moment en codant avec Sheweny !
+Si vous avez des questions n'hésitez pas à me contacter sur le [serveur support](https://discord.gg/euCF8bp4cN) ou sur le serveur de G-CA.
