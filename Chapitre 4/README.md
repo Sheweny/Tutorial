@@ -19,7 +19,7 @@ commands: {
     },
 ```
 
-Nous allons ajouter une ligne `prefix` avec une chaine de caractères qui sera le préfixe de nos commandes.
+Nous allons ajouter une ligne `prefix` avec une chaîne de caractères qui sera le préfixe de nos commandes.
 
 ```js
 prefix: "!",

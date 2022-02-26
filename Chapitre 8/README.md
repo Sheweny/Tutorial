@@ -1,12 +1,8 @@
-# Créer un bot discord 07/?? - Découverte des options de slash-commands
+# Créer un bot discord 07/?? - Utilisation des autocomplete
 
 Bienvenue dans ce nouveau chapitre dans lequel nous allons parler des options de slash-commands.
 
 _Ce chapitre fait parti d'une série de tutoriels. Bien qu'il soit possible de la suivre sans avoir lu les chapitres précédents, il est conseillé de les lire avant de commencer ce chapitre._
-
-## Les options de slash-commands
-
-Jusqu'ici, nous avons parlé des slash-commands, nous sommes capable de créer des commandes et de répondre à l'utilisateur cependant dans de nombreuses commandes nous aurons besoins de demander des informations à l'utilisateur. Pour cela il est possible d'utiliser des options. Discord fournit une grande variété d'options permettant de demander a un utilisateur de renseigner une chaîne de caractères, un nombre, un fichier, un utilisateur etc.
 
 ## Création d'une commande
 
@@ -20,7 +16,7 @@ module.exports = class SlashArgsCommand extends Command {
     super(client, {
       name: "slash-args",
       type: "SLASH_COMMAND",
-      description: "Commande avec des arguments",
+      description: "Commande du chapitre 7",
       category: "Misc",
     });
   }
@@ -32,7 +28,7 @@ module.exports = class SlashArgsCommand extends Command {
 
 ## Structure d'un argument
 
-Les arguments des slash-commands devront toujours être définis dans l'objet de la commmande avant d'être récupérés dans la fonction `execute()`.
+Les arguments des slash-commands devront toujours être définis dans les options de la commmande avant d'être récupérés dans la fonction `execute()` de la commande.
 Contrairement aux commandes par message, ici les arguments devront être définis dans un objet `options`, en effet pour les slash-commands on ne parle pas d'arguments mais plutôt d'options.
 Pour définir des options à nos commandes on utilisera cette structure :
 
@@ -49,7 +45,7 @@ options: [
 ```
 
 Ici contraitrement aux commandes par message, il existe plus de types spécialisés, et de nombreuses options afin de donner des précisions sur les arguments.
-Le type, le nom, la description sont des éléments obligatoires. Les autres paramètres sont facultatifs.
+Le type, le nom, la description sont des éléments obligatoires. Les autres paramètres sont facultatives.
 
 ## Recevoir un argument
 
@@ -62,7 +58,8 @@ _Note: on remplacera `getX()` par les méthodes présentés ci-dessous._ La list
 
 Le type `STRING` permet à l'utilisateur de spécifier une chaîne de caractères comme argument.
 Dans la commande, il faudra récupérer cet argument à l'aide de `interaction.options.getString("NOM_ARGUMENT")`.
-Il faut noter que actuellement discord ne prend en charge les chaînes de caractères seulement sur une seule ligne. Ils travaillent actuellement à un argument multi-lignes.
+Il faut noter que actuellement discord ne prend en charge les chaines de caractères seulement sur une seule ligne. Ils travaillent actuellement à un argument multi-lignes.
+Il existe également une option `choices` qui permet de définir une liste de choix pour l'utilisateur. Cette option est un array de [ApplicationCommandOptionChoice](https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandOptionChoice).
 
 ```js
 options: [
@@ -74,32 +71,6 @@ options: [
   }
 ]
 ```
-
-Pour le type string il est possible de donner une liste de choix à l'utilisateur. Plutôt que de taper entièrement la chaîne de caractères, l'utilisateur pourra choisir parmi une liste de valeurs définies.
-On utilisera un Array d'objets de type [ApplicationCommandOptionChoice](https://discord.js.org/#/docs/discord.js/stable/typedef/ApplicationCommandOptionChoice) dans une key `choices` pour cela.
-
-```js
-options: [
-  {
-    type: "STRING",
-    name: "NOM_ARGUMENT",
-    description: "DESCRIPTION_ARGUMENT",
-    choices:  [
-      {
-        name: "CHOIX_1",
-        value: "VALUE_1",
-      },
-       {
-        name: "CHOIX_2",
-        value: "VALUE_2",
-      }
-    ]
-  },
-  }
-]
-```
-
-Cependant cette méthode présente des limites comme le nombre d'options disponibles (25). Cette possibilité convient donc bien si l'utilisateur doit choisir entre quelques valeurs mais si vous souhaitez demander à l'utilisateur de choisir entre beaucoup d'options ou bien si vous souhaitez avoir une plus grande liberté dans le système nous verrons dans le chapitre suivant les auto-complete.
 
 ### Le type `INTEGER`
 

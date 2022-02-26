@@ -1,0 +1,15 @@
+{
+  "name": "tutorial",
+  "version": "1.0.0",
+  "description": "A cool bot for a tutorial",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Smaug6739",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.3.1",
+    "sheweny": "^3.1.0"
+  }
+}
