@@ -69,7 +69,7 @@ module.exports = {
 
 ## Installation des modules
 
-Pour notre bot nous allons utiliser des modules pour nous simplifier la tâche, en effet la création d'un bot sans module est très compliquée, il faut gérer un websocket, des requetes http, le cache, le rate-limite etc. Heureusement il existe des librairies très bien faites qui nous simplifieront la tâche. Nous allons donc installer discord.js et Sheweny. Discord.js permettra de faire toutes les intéractions avec l'api de discord. Et Sheweny vous simplifiera l'utilisation de discord.js, Sheweny va en fait s'occuper de charger vos différents fichiers et de gérer les événements importants, les commandes, événements etc. Pour installer discord.js et Sheweny il suffit de faire `npm install discord.js sheweny` dans un terminal.
+Pour notre bot nous allons utiliser des modules pour nous simplifier la tâche, en effet la création d'un bot sans module est très compliquée, il faut gérer un websocket, des requetes http, le cache, le rate-limite etc. Heureusement il existe des librairies très bien faites qui nous simplifieront le travail. Nous allons donc installer discord.js et Sheweny. Discord.js permettra de faire toutes les intéractions avec l'api de discord. Et Sheweny vous simplifiera l'utilisation de discord.js, Sheweny va en fait s'occuper de charger vos différents fichiers et de gérer les éléments importants, les commandes, événements etc. Pour installer discord.js et Sheweny il suffit de faire `npm install discord.js sheweny` dans un terminal.
 
 ## Structure finale
 
