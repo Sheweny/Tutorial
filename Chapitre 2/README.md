@@ -6,7 +6,7 @@ _Ce chapitre fait parti d'une série de tutoriels. Bien qu'il soit possible de l
 
 ## Structure du projet
 
-Nous allons commencer par créer un dossier qui contiendra l'ensemble du code de notre bot. Une fois le dossier créé nous pouvons ouvrir notre IDE a l'intérieur de ce dossier.
+Nous allons commencer par créer un dossier qui contiendra l'ensemble du code de notre bot. Une fois le dossier créé nous pouvons ouvrir notre IDE dedans.
 Si vous utilisez Visual Studio Code vous pouvez ouvrir le dossier avec le raccourci clavier `Ctrl K Ctrl O` ou bien en faisant Fichier => Ouvrir un dossier.
 
 ### Initialisation de npm
