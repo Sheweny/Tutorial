@@ -11,7 +11,7 @@ Si vous utilisez Visual Studio Code vous pouvez ouvrir le dossier avec le raccou
 
 ### Initialisation de npm
 
-Une fois dans notre projet nous allons commencer par initialiser npm. Npm signifie "_Node Package Manager_". Cette outil en ligne de commande va nous permettre de télécharger des modules et de les installer. Pour initialiser npm il suffit de faire `npm init` dans un terminal (Terminal => Nouveau terminal ou `Ctrl + Shift + ù` ).
+Une fois dans notre projet nous allons commencer par initialiser npm. Npm signifie "_Node Package Manager_". Cet outil en ligne de commande va nous permettre de télécharger des modules et de les installer. Pour initialiser npm il suffit de faire `npm init` dans un terminal (Terminal => Nouveau terminal ou `Ctrl + Shift + ù` ).
 Ensuite on répond aux différentes questions posées. Le résultat devrait être la création d'un fichier `package.json` qui contient les informations nécessaires à l'installation de notre projet.
 
 Pour ma part le fichier ressemble a ceci:
