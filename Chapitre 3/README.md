@@ -6,7 +6,7 @@ _Ce chapitre fait parti d'une série de tutoriels. Bien qu'il soit possible de l
 
 ## Qu'est-ce le client ?
 
-Le client représente notre bot, c'est le point de départ de tout robot sur discord. Depuis ce client nous recevrons les événements de Discord, nous pourrons intéragir avec certaines données mises en cache, exécuter des fonctions etc.
+Le client représente notre bot, c'est le point de départ de tout bot sur discord. Depuis ce client nous recevrons les événements de Discord, nous pourrons intéragir avec certaines données mises en cache, exécuter des fonctions etc.
 
 ## Création du client
 
@@ -56,8 +56,8 @@ const client = new ShewenyClient({
 
 ### Les partials
 
-Les partials sont une notion complexe a comprendre car cela repose sur le fonctionnement interne de discord.js, mais je vais vous expliquer le principal :
-Quand le bot doit recevoir un événement comme l'ajout d'une réaction à un message, il va construire un objet qui va contenir toutes les données nécessaires pour le bot. Cet objet peut reposer sur des données mises en cache par exemple un message. Cependant, si le message n'est pas dans le cache discord.js va être dans l'incapacité de construire un objet complet et ne va donc rien faire. Pour résoudre ce problème il faut utiliser des partials. Les partials vont forcer discord.js à émettre l'événement même si certaines données sont manquantes. De notre coté pour activer les partials nous allons faire un peu comme les intents : Nous allons faire un array qui contient toutes les partials :
+Les partials sont une notions complexes à comprendre car cela repose sur le fonctionnement interne de discord.js, mais je vais vous expliquer le principal :
+Quand le bot doit recevoir un événement comme l'ajout d'une réaction à un message, il va construire un objet qui va contenir toutes les données nécessaires pour le bot. Cet objet peut reposer sur des données mises en cache, par exemple un message. Cependant, si le message n'est pas dans le cache discord.js va être dans l'incapacité de construire un objet complet et ne va donc rien faire. Pour résoudre ce problème il faut utiliser des partials. Les partials vont forcer discord.js à émettre l'événement même si certaines données sont manquantes. De notre coté pour activer les partials nous allons faire un peu comme les intents : Nous allons faire un array qui contient toutes les partials :
 
 ```js
 const client = new ShewenyClient({
@@ -208,7 +208,7 @@ client.login(config.token); // Connexion à discord
 
 ## Conclusion
 
-Félicitations :) Votre bot est désormais en ligne. Dans ce chapitre nous avons appris
+Félicitations :) Votre bot est désormais en ligne. Dans ce chapitre nous avons appris :
 
 - À instancier un client Sheweny
 - À quoi servent les intents
