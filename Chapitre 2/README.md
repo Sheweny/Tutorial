@@ -6,12 +6,12 @@ _Ce chapitre fait parti d'une série de tutoriels. Bien qu'il soit possible de l
 
 ## Structure du projet
 
-Nous allons commencer par créer un dossier qui contiendra l'ensemble du code de notre bot. Une fois le dossier créé nous pouvons ouvrir notre IDE a l'intérieur de ce dossier.
+Nous allons commencer par créer un dossier qui contiendra l'ensemble du code de notre bot. Une fois le dossier créé nous pouvons ouvrir notre IDE dedans.
 Si vous utilisez Visual Studio Code vous pouvez ouvrir le dossier avec le raccourci clavier `Ctrl K Ctrl O` ou bien en faisant Fichier => Ouvrir un dossier.
 
 ### Initialisation de npm
 
-Une fois dans notre projet nous allons commencer par initialiser npm. Npm signifie "_Node Package Manager_". Cette outil en ligne de commande va nous permettre de télécharger des modules et de les installer. Pour initialiser npm il suffit de faire `npm init` dans un terminal (Terminal => Nouveau terminal ou `Ctrl + Shift + ù` ).
+Une fois dans notre projet nous allons commencer par initialiser npm. Npm signifie "_Node Package Manager_". Cet outil en ligne de commande va nous permettre de télécharger des modules et de les installer. Pour initialiser npm il suffit de faire `npm init` dans un terminal (Terminal => Nouveau terminal ou `Ctrl + Shift + ù` ).
 Ensuite on répond aux différentes questions posées. Le résultat devrait être la création d'un fichier `package.json` qui contient les informations nécessaires à l'installation de notre projet.
 
 Pour ma part le fichier ressemble a ceci:
@@ -69,7 +69,7 @@ module.exports = {
 
 ## Installation des modules
 
-Pour notre bot nous allons utiliser des modules pour nous simplifier la tâche, en effet la création d'un bot sans module est très compliquée, il faut gérer un websocket, des requetes http, le cache, le rate-limite etc. Heureusement il existe des librairies très bien faites qui nous simplifieront la tâche. Nous allons donc installer discord.js et Sheweny. Discord.js permettra de faire toutes les intéractions avec l'api de discord. Et Sheweny vous simplifiera l'utilisation de discord.js, Sheweny va en fait s'occuper de charger vos différents fichiers et de gérer les événements importants, les commandes, événements etc. Pour installer discord.js et Sheweny il suffit de faire `npm install discord.js sheweny` dans un terminal.
+Pour notre bot nous allons utiliser des modules pour nous simplifier la tâche, en effet la création d'un bot sans module est très compliquée, il faut gérer un websocket, des requetes http, le cache, le rate-limite etc. Heureusement il existe des librairies très bien faites qui nous simplifieront le travail. Nous allons donc installer discord.js et Sheweny. Discord.js permettra de faire toutes les intéractions avec l'api de discord. Et Sheweny vous simplifiera l'utilisation de discord.js, Sheweny va en fait s'occuper de charger vos différents fichiers et de gérer les éléments importants, les commandes, événements etc. Pour installer discord.js et Sheweny il suffit de faire `npm install discord.js sheweny` dans un terminal.
 
 ## Structure finale
 

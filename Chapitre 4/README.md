@@ -1,7 +1,7 @@
 # Créer un bot discord 04/?? - Découverte des commandes message
 
 Bienvenue dans ce nouveau chapitre dans lequel nous allons découvrir les commandes de messages. Les commandes messages ont été les premières à apparaître sur discord.
-Bien qu'aujourd'hui elles aient été remplacées majoritairement par les "slash-commands" elles restent utilisées dans certains cas. Étant donné que discord recommande de ne pas les utiliser, nous n'en parlerons que brièvement dans ce chapitre.
+Bien qu'aujourd'hui elles aient été remplacées majoritairement par les "slash-commands" elles restent utilisées dans certains cas. Étant donné que discord recommande de ne pas les utiliser, nous n'en parlerons que brièvement dans ce chapitre et le prochain.
 
 _Ce chapitre fait parti d'une série de tutoriels. Bien qu'il soit possible de la suivre sans avoir lu les chapitres précédents, il est conseillé de les lire avant de commencer ce chapitre._
 
