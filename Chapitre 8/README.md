@@ -1,4 +1,4 @@
-# Créer un bot discord 07/?? - Utilisation des autocomplete
+# Créer un bot discord 08/?? - Utilisation des autocomplete
 
 Bienvenue dans ce nouveau chapitre dans lequel nous allons parler des autocomplete de slash-commands.
 
