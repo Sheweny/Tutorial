@@ -105,4 +105,4 @@ Dans ce chapitre nous avons vu :
 
 Dans le prochain chapitre nous allons voir comment créer notre client et mettre notre bot en ligne.
 
-Si vous avez des questions n'hésitez pas à me contacter sur le [serveur support](https://discord.gg/euCF8bp4cN) ou sur le serveur de G-CA.
+Si vous avez des questions n'hésitez pas à les poser sur le serveur de G-CA.
