@@ -44,7 +44,7 @@ Bien qu'il soit possible de faire un bot dans un seul fichier, ce n'est pas vrai
 
 Si vous n'avez pas tout compris la vue suivante devrait vous éclairer:
 
-![dir_structure](./assets/images/dir_structure.png)
+![dir_structure](https://media.discordapp.net/attachments/1035178319718654043/1035179511861481472/Structure_des_fichiers.png?width=798&height=441)
 
 ### Création des fichiers
 
