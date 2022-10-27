@@ -1,23 +1,9 @@
-Smaug
-#6739
-
-Smaug — Today at 2:41 PM
-1 Portail des développeurs
-Image
-2 Nouvelle application
-Image
-Créer un bot
-Image
-width=798&height=441
 # Créer un bot discord 01/?? - Début de la série
 
 Bienvenue dans ce tutoriel sur le développement d'un bot discord !
 
 ## Introduction
-Expand
-message.txt
-8 KB
-﻿
+
 # Créer un bot discord 01/?? - Début de la série
 
 Bienvenue dans ce tutoriel sur le développement d'un bot discord !
