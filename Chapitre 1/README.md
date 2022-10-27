@@ -4,12 +4,6 @@ Bienvenue dans ce tutoriel sur le développement d'un bot discord !
 
 ## Introduction
 
-# Créer un bot discord 01/?? - Début de la série
-
-Bienvenue dans ce tutoriel sur le développement d'un bot discord !
-
-## Introduction
-
 Vous avez des bases en javascript et vous souhaitez créer un bot discord ? Ce tutoriel devrait vous intérésser :
 A la fin de ce tuto vous serez capables :
 - De créer une structure cohérente et maintenable pour votre bot
